@@ -45,7 +45,7 @@
               >
             </li>
             <li class="header-nav-item">
-              <a class="header-nav-link link" href="">Contacts</a>
+              <a class="header-nav-link link" href="#">Contacts</a>
             </li>
           </ul>
         </nav>
@@ -67,6 +67,17 @@
             </li>
           </ul>
         </address>
+
+        <!-- Menu button -->
+        <button
+          class="header-btn btn js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="header-btn-icon" width="32" height="22">
+            <use href="./images/icons.svg#menu"></use>
+          </svg>
+        </button>
       </div>
     </header>
 
@@ -371,34 +382,34 @@
           </p>
         </div>
 
-        <!-- Contacts -->
-        <div class="footer-contacts">
-          <p class="footer-contacts-title">Social media</p>
-          <ul class="footer-contacts-list list card-set">
-            <li class="footer-contacts-items card-set-item">
-              <a href="#" class="footer-contacts-link link">
-                <svg class="footer-contacts-logo" width="24" height="24">
+        <!-- Socials -->
+        <div class="footer-socials">
+          <p class="footer-socials-title">Social media</p>
+          <ul class="footer-socials-list list card-set">
+            <li class="footer-socials-items card-set-item">
+              <a href="#" class="footer-socials-link link">
+                <svg class="footer-socials-logo" width="24" height="24">
                   <use href="./images/icons.svg#instagram"></use>
                 </svg>
               </a>
             </li>
-            <li class="footer-contacts-items card-set-item">
-              <a href="#" class="footer-contacts-link link">
-                <svg class="footer-contacts-logo" width="24" height="24">
+            <li class="footer-socials-items card-set-item">
+              <a href="#" class="footer-socials-link link">
+                <svg class="footer-socials-logo" width="24" height="24">
                   <use href="./images/icons.svg#twitter"></use>
                 </svg>
               </a>
             </li>
-            <li class="footer-contacts-items card-set-item">
-              <a href="#" class="footer-contacts-link link">
-                <svg class="footer-contacts-logo" width="24" height="24">
+            <li class="footer-socials-items card-set-item">
+              <a href="#" class="footer-socials-link link">
+                <svg class="footer-socials-logo" width="24" height="24">
                   <use href="./images/icons.svg#facebook"></use>
                 </svg>
               </a>
             </li>
-            <li class="footer-contacts-items card-set-item">
-              <a href="#" class="footer-contacts-link link">
-                <svg class="footer-contacts-logo" width="24" height="24">
+            <li class="footer-socials-items card-set-item">
+              <a href="#" class="footer-socials-link link">
+                <svg class="footer-socials-logo" width="24" height="24">
                   <use href="./images/icons.svg#linkedin"></use>
                 </svg>
               </a>
@@ -406,21 +417,21 @@
           </ul>
         </div>
 
-        <!-- Subscription form -->
-        <div class="footer-subscription">
-          <p class="footer-subscription-caption">Subscribe</p>
-          <form class="footer-subscription-form" name="subscription_form">
-            <label class="footer-subscription-field">
+        <!-- Subscribe form -->
+        <div class="footer-subscribe">
+          <p class="footer-subscribe-caption">Subscribe</p>
+          <form class="footer-subscribe-form" name="subscribe_form">
+            <label class="footer-subscribe-field">
               <input
-                class="footer-subscription-input"
+                class="footer-subscribe-input"
                 type="email"
-                name="subscription-email"
+                name="subscribe-email"
                 placeholder="E-mail"
               />
             </label>
-            <button class="footer-subscription-btn btn" type="submit">
+            <button class="footer-subscribe-btn btn" type="submit">
               Subscribe
-              <svg class="footer-subscription-logo" width="24" height="24">
+              <svg class="footer-subscribe-logo" width="24" height="24">
                 <use href="./images/icons.svg#subscribe"></use>
               </svg>
             </button>
@@ -428,5 +439,87 @@
         </div>
       </div>
     </footer>
+
+    <!-- Mobile menu -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <!-- Menu close button -->
+      <button class="menu-close-btn btn js-close-menu">
+        <svg class="menu-close-icon" width="8" height="8">
+          <use href="./images/icons.svg#close"></use>
+        </svg>
+      </button>
+
+      <!-- Menu items -->
+      <ul class="menu-list list">
+        <li class="menu-item item">
+          <a class="menu-link link" href="./index.html">Studio</a>
+        </li>
+        <li class="menu-item item">
+          <a class="menu-link active link" href="./portfolio.html">Portfolio</a>
+        </li>
+        <li class="menu-item item">
+          <a class="menu-link link" href="#">Contacts</a>
+        </li>
+      </ul>
+
+      <!-- Menu contacts -->
+      <address class="menu-adress">
+        <ul class="menu-adress-list list">
+          <li class="menu-adress-item">
+            <a class="menu-adress-link phone link" href="tel:+110001111111"
+              >+11 (000) 111-11-11</a
+            >
+          </li>
+          <li class="menu-adress-item">
+            <a
+              class="menu-adress-link email link"
+              href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </li>
+        </ul>
+      </address>
+
+      <!-- Menu sosials -->
+      <ul class="menu-socials-list list">
+        <li class="menu-socials-item">
+          <a href="#" class="menu-socials-link link">
+            <svg class="menu-socials-icon" width="24" height="24">
+              <use href="./images/icons.svg#instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="menu-socials-item">
+          <a href="#" class="menu-socials-link link">
+            <svg class="menu-socials-icon" width="24" height="24">
+              <use href="./images/icons.svg#twitter"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="menu-socials-item">
+          <a href="#" class="menu-socials-link link">
+            <svg class="menu-socials-icon" width="24" height="24">
+              <use href="./images/icons.svg#facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="menu-socials-item">
+          <a href="#" class="menu-socials-link link">
+            <svg class="menu-socials-icon" width="24" height="24">
+              <use href="./images/icons.svg#linkedin"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Scripts -->
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>
