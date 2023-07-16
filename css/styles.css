@@ -99,8 +99,8 @@ img {
   padding: 0 16px;
   margin: 0 auto;
 
-  outline: 2px solid red;
-  outline-offset: -2px;
+  /* outline: 2px solid red;
+  outline-offset: -2px; */
 }
 @media only screen and (min-width: 768px) {
   .container {
@@ -1178,7 +1178,11 @@ img {
 }
 @media only screen and (max-width: 767px) {
   .modal {
-    width: 392px;
+    width: 95%;
+    max-width: 392px;
+    height: 95%;
+    max-height: 584px;
+
     padding-left: 16px;
     padding-right: 16px;
   }
