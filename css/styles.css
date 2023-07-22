@@ -1,3 +1,5 @@
+@import url(../css/modal.css);
+
 :root {
   /* Font */
   --primary-font: 'Roboto', sans-serif;
@@ -316,7 +318,6 @@ img {
 .header-adress-list {
   line-height: 1;
 }
-
 @media only screen and (min-width: 1158px) {
   .header-adress-list {
     display: flex;
@@ -327,7 +328,6 @@ img {
 
 .header-adress-item {
 }
-
 @media only screen and (max-width: 1157px) {
   .header-adress-item:not(:last-child) {
     margin-bottom: 12px;
@@ -351,15 +351,12 @@ img {
 }
 
 .header-btn {
-  min-width: 32px;
-  min-height: 22px;
   display: flex;
   align-items: center;
   justify-content: center;
 
   margin: 0;
   margin-left: auto;
-  padding: 0;
   background-color: transparent;
   border: none;
   outline: none;
@@ -1135,11 +1132,11 @@ img {
 
 /**
   |============================
-  | Modal styles
+  | Modal styles 1
   |============================
 */
 
-.backdrop {
+/* .backdrop {
   position: fixed;
   top: 0;
   left: 0;
@@ -1157,7 +1154,6 @@ img {
   pointer-events: none;
 }
 
-/* Visible state */
 .modal {
   position: absolute;
   left: 50%;
@@ -1212,7 +1208,6 @@ img {
   justify-content: center;
   align-items: center;
 }
-
 .modal-btn:hover,
 .modal-btn:focus {
   border: none;
@@ -1223,11 +1218,10 @@ img {
   fill: var(--navy-blue-color);
   transition: fill var(--anim-prop);
 }
-
 .modal-btn:hover .modal-icon,
 .modal-btn:focus .modal-icon {
   fill: var(--white-color);
-}
+} */
 
 /* Modal form start */
 
